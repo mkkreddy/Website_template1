@@ -29,17 +29,17 @@
             <a href="#" id="logo-container" class="brand-logo">Hi-Tech Medicos</a>
                 <ul class="right hide-on-med-and-down">
                     <li><a href="#intro">Service</a></li>
-                    <li><a href="#work">Work</a></li>
+                    <li><a href="#work">Review</a></li>
                     <li><a href="#team">Team</a></li>
                     <li><a href="#contact">Contact</a></li>
-                    <li><a href="https://github.com/joashp/material-design-template" target="_blank">Download</a></li>
+                    
                 </ul>
                 <ul id="nav-mobile" class="side-nav">
                     <li><a href="#intro">Service</a></li>
                     <li><a href="#work">Work</a></li>
                     <li><a href="#team">Team</a></li>
                     <li><a href="#contact">Contact</a></li>
-                    <li><a href="https://github.com/joashp/material-design-template" target="_blank">Download</a></li>
+                    
                 </ul>
             <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
             </div>
@@ -49,40 +49,43 @@
 
 <!--Hero-->
 <div class="section no-pad-bot" id="index-banner">
-    <div class="container">
-        <h1 class="text_h center header cd-headline letters type">
+    <br>
+    <br>
+    <div class="container center ">  
+
+        <div class="row section-left">
+            <div class="col l6 s12">
+                <form class="col s12" action="order.html" method="post">
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <i class="mdi-maps-my-location prefix white-text"></i>
+                            <input id="icon_prefix" name="name" type="text" class="validate white-text">
+                            <label for="icon_prefix" class="white-text">Enter Your Zip Code To Order</label>
+                        
+                        </div>
+                    </div>
+
+                
+            </div>
+            <div class="col l44 center s66">
+                <button class="btn waves-effect center waves-button waves-float" style="color:rgb(255, 255, 255);background:rgb(33, 150, 243)" type="submit">Order Now
+                                <i class="mdi-maps-local-hospital right white-text"></i>
+                            </button>
+            </div>
+</form>
+        </div>
+    </div>    
+
+<div class="container ">      
+        <h3 class="text_h center header cd-headline letters type">
             <span>Kolkata</span> 
             <span class="cd-words-wrapper waiting">
                 <b class="is-visible">Your Local Pharmacy Online</b>
                 <b> </b>
                 <b>Get Your Medicine Delivered Fast</b>
             </span>
-        </h1>
+        </h3>
     </div>
-    <div class="container">  
-        <div class="row">
-            <div class="col l6 s12">
-                <form class="col s12" action="contact.php" method="post">
-                    <div class="row">
-                        <div class="input-field col s12">
-                            <i class="mdi-maps-my-location prefix white-text"></i>
-                            <input id="icon_prefix" name="name" type="text" class="validate white-text">
-                            <label for="icon_prefix" class="white-text">Zip Code</label>
-                        
-                        </div>
-                    </div>
-
-                </form>
-            </div>
-            <div class="col l4 s6">
-                <button class="btn waves-effect waves-button waves-float" style="color:rgb(255, 255, 255);background:rgb(33, 150, 243)" type="submit">Submit
-                                <i class="mdi-maps-local-hospital right white-text"></i>
-                            </button>
-            </div>
-
-        </div>
-    </div>    
-
 </div>
 
 <!--Intro and service-->
@@ -90,28 +93,31 @@
     <div class="container">
         <div class="row">
             <div  class="col s12">
-                <h2 class="center header text_h2"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. <span class="span_h2"> Phasellus  </span>vestibulum lorem risus, nec suscipit lorem <span class="span_h2"> laoreet quis.</span> </h2>
+                <h2 class="center header text_h2"> How <span class="span_h2"> Hi-Tech Medicos  </span>Works<span class="span_h2">.</span> </h2>
             </div>
 
             <div  class="col s12 m4 l4">
                 <div class="center promo promo-example">
-                    <i class="mdi-image-flash-on"></i>
-                    <h5 class="promo-caption">Speeds up development</h5>
-                    <p class="light center">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Cum sociis natoque penatibus et magnis dis parturient montes.</p>
+                    <i class="mdi-action-note-add"></i>
+                    <h5 class="promo-caption">1. Your Doctor Prescription</h5>
+                    <p class="light center">Just like any other pharmacy, your need to upload your doctor prescription.</p>
                 </div>
             </div>
+
             <div class="col s12 m4 l4">
+            
                 <div class="center promo promo-example">
-                    <i class="mdi-social-group"></i>
-                    <h5 class="promo-caption">User Experience Focused</h5>
-                    <p class="light center">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+                    <i class="mdi-notification-event-note"></i>
+                    <h5 class="promo-caption">2. Schedule Your Delivery</h5>
+                    <p class="light center">Once we receive your prescription, we send you a notification. Simply click the link to schedule your delivery!</p>
                 </div>
             </div>
+            
             <div class="col s12 m4 l4">
                 <div class="center promo promo-example">
-                    <i class="mdi-hardware-desktop-windows"></i>
-                    <h5 class="promo-caption">Fully responsive</h5>
-                    <p class="light center">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
+                    <i class="mdi-notification-drive-eta"></i>
+                    <h5 class="promo-caption">3. We Deliver for Free</h5>
+                    <p class="light center">Your prescriptions are delivered to your door at no extra cost; delivery is completely free.</p>
                 </div>
             </div>
         </div>
@@ -121,12 +127,59 @@
 <!--Work-->
 <div class="section scrollspy" id="work">
     <div class="container">
-        <h2 class="header text_b">Work </h2>
+        <h2 class="header text_b">Review </h2>
         <div class="row">
-            <div class="col s12 m4 l4">
+            <div class="col s12 m3 l4">
+                <div class="card">
+                    <div class="card-avatar waves-effect waves-block waves-light">
+                        <img class="activator" src="static/img/project1.jpg">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title activator grey-text text-darken-4">Ajay Singh <i class="mdi-editor-format-quote right"></i></span>
+                        <p><a href="#">Kolkata, NewTown</a></p>
+                    </div>
+                    <div class="card-reveal">
+                        <span class="card-title grey-text text-darken-4">Ajay Singh <i class="mdi-navigation-close right"></i></span>
+                        <p>I don't know how you could go wrong with Alto. They deliver your prescription(s) free of charge to you...HELLO?! [...] You control the refill delivery dates, you add or remove prescriptions as needed and if you go on vacation they will work with your insurance to get you.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 m3 l4">
+                <div class="card">
+                    <div class="card-avatar waves-effect waves-block waves-light">
+                        <img class="activator" src="static/img/project2.jpeg">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title activator grey-text text-darken-4">Amit Kumar <i class="mdi-editor-format-quote right"></i></span>
+                        <p><a href="#">Kolkata, Chinar Park</a></p>
+                    </div>
+                    <div class="card-reveal">
+                        <span class="card-title grey-text text-darken-4">Amit Kumar <i class="mdi-navigation-close right"></i></span>
+                        <p>There is nothing better then getting your prescription delivered right to your door while you're sick at home! If you don't get your prescription through Alto, you need to! Best thing ever!</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col s12 m3 l4">
+                <div class="card">
+                    <div class="card-avatar waves-effect waves-block waves-light">
+                        <img class="activator" src="static/img/project3.png">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title activator grey-text text-darken-4">Yash Mukund Sana <i class="mdi-editor-format-quote right"></i></span>
+                        <p><a href="#">Kolkata, College Street</a></p>
+                    </div>
+                    <div class="card-reveal">
+                        <span class="card-title grey-text text-darken-4">Yash Mukund Sana <i class="mdi-navigation-close right"></i></span>
+                        <p>Alto phoned and walked me through the Co-Pays I would owe and scheduled a delivery time for me. They texted when they were coming over and when they arrived. I even had a candy in the box, yum!</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!--<div class="col s12 m4 l4">
                 <div class="card">
                     <div class="card-image waves-effect waves-block waves-light">
-                        <img class="activator" src="img/project1.jpg">
+                        <img class="activator" src="static/img/project2.jpeg">
                     </div>
                     <div class="card-content">
                         <span class="card-title activator grey-text text-darken-4">Project Title <i class="mdi-navigation-more-vert right"></i></span>
@@ -141,7 +194,7 @@
             <div class="col s12 m4 l4">
                 <div class="card">
                     <div class="card-image waves-effect waves-block waves-light">
-                        <img class="activator" src="img/project2.jpeg">
+                        <img class="activator" src="static/img/project3.png">
                     </div>
                     <div class="card-content">
                         <span class="card-title activator grey-text text-darken-4">Project Title <i class="mdi-navigation-more-vert right"></i></span>
@@ -153,22 +206,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col s12 m4 l4">
-                <div class="card">
-                    <div class="card-image waves-effect waves-block waves-light">
-                        <img class="activator" src="img/project3.png">
-                    </div>
-                    <div class="card-content">
-                        <span class="card-title activator grey-text text-darken-4">Project Title <i class="mdi-navigation-more-vert right"></i></span>
-                        <p><a href="#">Project link</a></p>
-                    </div>
-                    <div class="card-reveal">
-                        <span class="card-title grey-text text-darken-4">Project Title <i class="mdi-navigation-close right"></i></span>
-                        <p>Here is some more information about this project that is only revealed once clicked on.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col s12 m4 l4">
+             <div class="col s12 m4 l4">
                 <div class="card">
                     <div class="card-image waves-effect waves-block waves-light">
                         <img class="activator" src="img/project4.jpg">
@@ -212,14 +250,14 @@
                         <p>Here is some more information about this project that is only revealed once clicked on.</p>
                     </div>
                 </div>
-            </div>
+            </div> -->
         </div>
     </div>
 </div>
 
 <!--Parallax-->
 <div class="parallax-container">
-    <div class="parallax"><img src="img/parallax1.png"></div>
+    <div class="parallax"><img src="static/img/parallax1.png"></div>
 </div>
 
 <!--Team-->
@@ -230,7 +268,7 @@
             <div class="col s12 m3">
                 <div class="card card-avatar">
                     <div class="waves-effect waves-block waves-light">
-                        <img class="activator" src="img/avatar1.png">
+                        <img class="activator" src="static/img/avatar1.png">
                     </div>
                     <div class="card-content">
                         <span class="card-title activator grey-text text-darken-4">Flash <br/>
@@ -255,11 +293,11 @@
             <div class="col s12 m3">
                 <div class="card card-avatar">
                     <div class="waves-effect waves-block waves-light">
-                        <img class="activator" src="img/avatar2.png">
+                        <img class="activator" src="static/img/avatar2.png">
                     </div>
                     <div class="card-content">
                         <span class="card-title activator grey-text text-darken-4">Cat Woman<br/>
-                            <small><em><a class="red-text text-darken-1" href="#">Designer</a></em></small>
+                            <small><em><a class="red-text text-darken-1" href="#">Developer</a></em></small>
                         </span>
                         <p>
                             <a class="blue-text text-lighten-2" href="https://www.facebook.com/joash.c.pereira">
@@ -281,7 +319,7 @@
             <div class="col s12 m3">
                 <div class="card card-avatar">
                     <div class="waves-effect waves-block waves-light">
-                        <img class="activator" src="img/avatar3.png">
+                        <img class="activator" src="static/img/avatar3.png">
                     </div>
                     <div class="card-content">
                         <span class="card-title activator grey-text text-darken-4">
@@ -307,11 +345,11 @@
             <div class="col s12 m3">
                 <div class="card card-avatar">
                     <div class="waves-effect waves-block waves-light">
-                        <img class="activator" src="img/avatar4.png">
+                        <img class="activator" src="static/img/avatar4.png">
                     </div>
                     <div class="card-content">
                         <span class="card-title activator grey-text text-darken-4">Robin<br/>
-                            <small><em><a class="red-text text-darken-1" href="#">Developer</a></em></small></span>
+                            <small><em><a class="red-text text-darken-1" href="#">COO</a></em></small></span>
                         <p>
                             <a class="blue-text text-lighten-2" href="https://www.facebook.com/joash.c.pereira">
                                 <i class="fa fa-facebook-square"></i>
@@ -363,33 +401,30 @@
                     </div>
                 </form>
             </div>
-            <div class="col l3 s12">
+            <!-- <div class="col l3 s12"> #}
                 <h5 class="white-text">joashpereira.com</h5>
                 <ul>
                     <li><a class="white-text" href="http://www.joashpereira.com/">Home</a></li>
                     <li><a class="white-text" href="http://www.joashpereira.com/blog">Blog</a></li>
                 </ul>
-            </div>
+            </div> -->
             <div class="col l3 s12">
                 <h5 class="white-text">Social</h5>
                 <ul>
-                    <li>
-                        <a class="white-text" href="https://www.behance.net/joashp">
-                            <i class="small fa fa-behance-square white-text"></i> Behance
-                        </a>
-                    </li>
+                    
                     <li>
                         <a class="white-text" href="https://www.facebook.com/joash.c.pereira">
                             <i class="small fa fa-facebook-square white-text"></i> Facebook
                         </a>
                     </li>
                     <li>
-                        <a class="white-text" href="https://github.com/joashp">
-                            <i class="small fa fa-github-square white-text"></i> Github
+                        <a class="white-text" href="https://www.twitter.com">
+                            <i class="small fa fa-twitter-square white-text"></i> Twitter
                         </a>
                     </li>
+                    
                     <li>
-                        <a class="white-text" href="https://www.linkedin.com/in/joashp">
+                        <a class="white-text" href="https://www.linkedin.com/in">
                             <i class="small fa fa-linkedin-square white-text"></i> Linkedin
                         </a>
                     </li>
@@ -399,7 +434,7 @@
     </div>
     <div class="footer-copyright default_color">
         <div class="container">
-            Made by <a class="white-text" href="http://joashpereira.com">Joash Pereira</a>. Thanks to <a class="white-text" href="http://materializecss.com/">materializecss</a>
+            Made by <a class="white-text" href="http://google.com">Hi-Tech Solutions</a>. Thanks to <a class="white-text" href="http://joashpereira.com">Joash Pereira</a>
         </div>
     </div>
 </footer>
