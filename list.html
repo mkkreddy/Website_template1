@@ -26,7 +26,7 @@
     <nav id="nav_f" class="default_color" role="navigation">
         <div class="container">
             <div class="nav-wrapper">
-            <a href="#" id="logo-container" class="brand-logo">Hi-Tech Medicos</a>
+            <a href="index.html" id="logo-container" class="brand-logo">Hi-Tech Medicos</a>
                 <ul class="right hide-on-med-and-down">
                     <li><a href="#intro">Service</a></li>
                     <li><a href="#work">Review</a></li>
@@ -93,28 +93,87 @@
     <div class="container center">
         <div class="row">
             <div  class="col s12">
-                <h2 class="center header text_h2"> Select Mode Of<span class="span_h2"> Order   </span>!<span class="span_h2"></span> </h2>
+                <h2 class="center header text_h2"> Fill Your<span class="span_h2"> Order   </span>!<span class="span_h2"></span> </h2>
             </div>
+</div>
 
-            <div  class="col center s12 m4 l6">
-                
-                    <div class="center promo promo-example" >
-                    <a href="upload.html">
-                    <i class="mdi-image-camera-alt"></i></a>
-                    <h5 class="promo-caption">Upload Prescription</h5>
-                    <p class="light center">Upload Image of your Prescription</p>
-                </div>
+<!-- Add JS Listing Methods-->
+<div class="container">
+    <div class="row">
+        <input type="hidden" name="count" value="1" />
+        <div class="control-group" id="fields">
+            <label class="control-label" for="field1">Add Products Below</label>
+            <div class="controls" id="profs"> 
+                <form class="input-append">
+                   <div class="row">
+                    <div  class="col s6">
+                    <div id="field"><input autocomplete="off" class="input" id="field1" name="prof1" type="text" placeholder="Enter Product Name" data-items="8"/></div>
+                        <div  class="col s3">
+<input autocomplete="off" class="input" id="qfield1" name="prof1" type="text" placeholder="Quantity" data-items="8"/></div><div  class="col s3">
+                        <button id="b1" class="btn add-more" type="button">+</button></div></div>   </div>
+                </form>
+            <br>
+            <small>Press + to add another Product </small>
             </div>
+        </div>
+    </div>
+</div>
 
-            <div class="col center s12 m4 l6">
+            <div class="container ">
+        
             
-                <div class="center promo promo-example">
-                    <a href="list.html">
-                    <i class="mdi-notification-event-note"></i></a>
-                    <h5 class="promo-caption">List Your Products</h5>
-                    <p class="light center">Provide Us Medicines Information</p>
-                </div>
-            </div><br>
+                <form class="col s12" action="contact.php" method="post">
+                    
+
+
+                    <div class="input-field col s12">
+                        <i class="mdi-editor-mode-edit prefix blue-text"></i>
+                        <textarea id="icon_prefix2" name="message" class="materialize-textarea blue-text"></textarea>
+                        <label for="icon_prefix" >Additional Comments</label>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s6">
+                            <i class="mdi-action-account-circle prefix blue-text"></i>
+                            <input id="icon_prefix" name="fname" type="text" class="validate blue-text" >
+                            <label for="icon_prefix" >First Name</label>
+                        </div>
+                        <div class="input-field col s6">
+                            
+                            <input id="icon_prefix" name="lname" type="text" class="validate blue-text" >
+                            <label for="icon_prefix" >Last Name</label>
+
+                        </div>
+                        <div class="input-field col s12">
+                            
+                            <i class="mdi-communication-email prefix blue-text"></i>
+                            <input id="icon_prefix" name="lname" type="email" class="validate blue-text" placeholder ="sample@email.com">
+                            <label for="icon_prefix" >Email ID</label>
+                        </div>
+                        <div class="input-field col s12">
+                            <i class="mdi-editor-mode-edit prefix blue-text"></i>
+                            <textarea id="icon_prefix2" name="message" class="materialize-textarea blue-text"></textarea>
+                            <label for="icon_prefix" >Address</label>
+                        </div>
+                        <div class="input-field col s6">
+                            <i class="mdi-communication-call prefix blue-text"></i>
+                            <input id="icon_prefix" name="lname" type="number" class="validate blue-text"  placeholder="9884098840"></input>
+                            <label for="icon_prefix" >Mobile </label>
+                        </div>
+                        <div class="input-field col s6">
+                            <i class="mdi-maps-my-location prefix prefix blue-text"></i>  
+                            <input id="icon_prefix" name="lname" type="number" class="validate blue-text"  placeholder="700156"></input>
+                            <label for="icon_prefix" >Zip </label>
+                        </div>
+                        <div class="col  center s12">
+                            <br/>
+                            <button class="btn waves-effect waves-button waves-float" style="color:rgb(255, 255, 255);background:rgb(33, 150, 243)" type="submit">Submit
+                                <i class="mdi-content-send right white-text"></i>
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
             <br>
         </div><br><br><br><br>
     </div>
@@ -199,6 +258,39 @@
     <!--  Scripts-->
     <script src="static/min/plugin-min.js"></script>
     <script src="static/min/custom-min.js"></script>
+<script>
+$(document).ready(function(){
+    var next = 1;
+    $(".add-more").click(function(e){
+        e.preventDefault();
+        var addto = "#field" + next;
+        var addRemove = "#field" + (next);
+        next = next + 1;
+        var newIn = '<div  class="col s3"><input autocomplete="off" class="input form-control" id="field' + next + '" name="field' + next + '" type="text"placeholder="Enter Product"></div>';
+        var newqIn = '<div  class="col s3"><input autocomplete="off" class="input form-control" id="qfield' + next + '" name="qfield' + next + '" type="text" placeholder="Quantity"></div>';
+        
+        var newInput = $(newIn);
+        var newqInput = $(newqIn);
+        var removeBtn = '<div  class="col s3"><button id="remove' + (next - 1) + '" class="btn btn-danger remove-me" >-</button></div><div id="field"></div>';
+        var removeButton = $(removeBtn);
+        $(addto).after(newInput);
+        $(addto).after(newqInput);
+        $(addRemove).after(removeButton);
+        $("#field" + next).attr('data-source',$(addto).attr('data-source'));
+        $("#count").val(next);  
+        
+            $('.remove-me').click(function(e){
+                e.preventDefault();
+                var fieldNum = this.id.charAt(this.id.length-1);
+                var fieldID = "#field" + fieldNum;
+                $(this).remove();
+                $(fieldID).remove();
+            });
+    });
+    
 
+    
+});
+</script>
     </body>
 </html>
